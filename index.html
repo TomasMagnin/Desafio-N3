@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/icon/Market_Online.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Market Online</title>
+</head>
+<body>
+<header >
+    <nav class="navbar navItem navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand titleImg" href="#">
+            <img src="./assets/images/Market_Online.png"  alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Market Online
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav navList me-auto mb-2 mb-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item"  href="#">Listar Prodructos</a></li>
+                  <li><a class="dropdown-item"  href="#">Quitar Listado</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Agregar Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Buscar Poductos</a>
+              </li>
+            </ul>
+            <form class="d-flex formNav">
+              <input class="form-control me-2" type="search" placeholder="Search Car" aria-label="Search">
+              <button class="btn buttNav btn-outline-success" type="submit">Search</button>
+            </form>
+            <form class="d-flex formNav" id="formNav">
+              <input class="form-control me-2" type="search" placeholder="Ingrese su Usuario" aria-label="Search">
+              <button class="btn buttNav btn-outline-success"  id="formNav" type="submit">Usuario</button>
+            </form>
+            <a class="buscador-icon" id="carrito"  data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">
+              <img src="./carrito-de-compras.png" alt="Buscador"><p id="contadorCarrito">0</p>
+            </a>
+            <div class="modal fade " id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog ">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="Container-carrit"></div>
+                  <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                  <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>  
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </nav>
+</header>
+<main class="tarjetas__conenedor">
+  <section >
+    <div class="row d-flex justify-content-center tarjetas">
+      <h2 class="tarjetas__title  text-center m-3 letraTitulo1">Ver Nuestro Catalogo de Productos</h2>  
+      <button class="btn botonPages m-2 " id="btn1" >Listar Prodructos</button>
+      <button class="btn botonPages m-2" id="btn2" >Quitar Lista de Prodructos</button>  
+      <div id="ListProdcuts" class="ListProdcuts" ></div>
+    </div>  
+  </section>
+  <section>
+    <h2 class="tarjetas__title  text-center m-3 letraTitulo1"> Complete el formualrio para ingresar un Nuevo Producto</h2>
+    <div class="container-fluid"> 
+      <form id="form" class="form1">
+          <p><b>Ingrese la Marca</b></p>
+          <input type="text" id="brandField" class="inputForm1"> <br>
+          <p><b>Ingrese el Modelo</b></p>
+          <input type="text" id="modelField" class="inputForm1"> <br>
+          <p><b>Ingrese el Año</b></p>
+          <input type="number" id="numberYearField" class="inputForm1"> <br>
+          <p><b>Ingrese el Precio</b></p>
+          <input type="number" id="priceField" class="inputForm1"> <br>
+          <p><b>Ingrese la Cantiad de Stock</b></p>
+          <input type="number" id="stockField" class="inputForm1"> <br>
+          <p><b>Ingrese una Imagen del Producto</b></p>
+          <input type="file" id="image" class="inputForm1 importImput"> <br>
+          <p><b>Haga clic en enviar para Cargar los datos Ingresados</b></p>
+          <input type="submit"> <br>
+          <input type="reset"><br>
+      </form>
+    </div>  
+    <div id="products2" class="row d-flex justify-content-center tarjetas"></div>
+  </section>
+  <section>
+    <h2 class="tarjetas__title  text-center m-3 letraTitulo1">Busque la Marca de su Vehículo</h2>
+    <form id="form2" class="form2">
+        <input type="text">
+        <input type="submit" class=" row d-flex justify-content-center tarjetas form2Input mt-2" placeholder="Buscar" >
+    </form>
+    <div id="filter" class=" form2Input row d-flex justify-content-center tarjetas">
+      
+    </div>
+  </section>
+</main>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

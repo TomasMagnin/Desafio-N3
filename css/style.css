@@ -1,0 +1,345 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------ Aplicamos Variables ----------------------------- */
+.boton, .botonContactos, .botonPages, .botonHome {
+  background-color: whitesmoke;
+  color: whitesmoke;
+  font-weight: 700;
+}
+.boton:hover, .botonContactos:hover, .botonPages:hover, .botonHome:hover {
+  background-color: orange;
+  transition: all 0.2s;
+}
+
+.botonHome {
+  width: 100px;
+  padding: 5px 10px;
+  text-align: center;
+  border: solid 2px #203239;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonHome:hover {
+  background-color: orange;
+  color: black;
+  transition: all 0.2s;
+}
+
+.botonPages {
+  width: 110px;
+  padding: 5px 10px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonPages:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.botonContactos {
+  width: 110px;
+  padding: 6px 10px;
+  margin: 5px 5px;
+  font-weight: 100;
+  text-align: center;
+  border: solid 2px whitesmoke;
+  text-decoration: none;
+  background-color: whitesmoke;
+  color: #203239;
+  border-radius: 5px;
+}
+.botonContactos:hover {
+  background-color: orangered;
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+
+.modal-content {
+  background-color: orange;
+  color: whitesmoke;
+}
+
+.btn-close {
+  background-color: whitesmoke;
+  background-image: url(../../assets/icon/Close.png);
+  size: 20px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(../../assets/icon/Next.png);
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../../assets/icon/previous.png);
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.botonInstagram {
+  background: orangered;
+}
+
+.botonFacebook {
+  background-color: rgba(0, 38, 255, 0.753);
+}
+
+.botonTwitter {
+  background-color: lightblue;
+}
+
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+/* -------------------------------------------- Buscador --------------------------------------------------------------*/
+.buscador {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.buscador input {
+  width: 55vw;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: black 2px solid;
+  margin-left: 30px;
+  text-align: center;
+}
+.buscador-icon img {
+  width: 50px;
+  height: 40px;
+  padding: 2px;
+  margin-bottom: 4px;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  border: black 2px solid;
+  border-radius: 5px;
+}
+.buscador-icon :hover {
+  background-color: orange;
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.buscador-img img {
+  border-radius: 10px;
+  width: 40px;
+  margin: 0px 4px 4px 4px;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+* :root {
+    --bs-purplee: blueviolet;
+    --bs-smokee: whitesmoke;
+}
+
+
+.navItem {
+    background-color: whitesmoke;
+    
+}
+
+.navbar-light .titleImg {
+    color:#3498DB;   
+}
+
+.navList .nav-item .nav-link {
+    color:#3498DB; 
+} 
+
+.navList .nav-item .nav-link :hover {
+    background-color: blanchedalmond; 
+}
+
+.buttNav {
+    border: solid 2px #407088;
+    color: #00bbf0;
+}
+
+.buttNav:hover {
+    background-color: #fbf2d5;
+    color: #407088;
+    transition: 0.5ms;
+}
+
+
+.ListProdcuts  {
+ /*  background-image: url("../assets/images/Backgraund1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 5px;
+}
+
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form1 {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form1 b {
+  align-self:  center;
+  color: whitesmoke;
+}
+
+.form2Input {
+  width: 200px;
+  align-items: center;
+}
+
+.ListProdcuts {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.formNav {
+  
+  padding: 5px;
+}
+/* ------------------------------------------------------------------Main Paginas Secuandarias--------------------------------------------------------------- */
+
+.tarjetas__conenedor {
+    background-color: #203239;
+    color: var(--clr-ceniza);
+  }
+  
+  .tarjetas__title {
+    background-color: orangered;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .tarjeta1 {
+    background-color: orange;
+  }
+  .tarjeta1__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .modal-body img {
+    width: 100%;
+  }
+  
+  .modal-header h4 {
+    text-align: center;
+  }
+
+  /* ------------------------------------------------------------------Modal Carrito--------------------------------------------------------------- */
+
+ /*  .modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: royalblue;
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: royalblue;
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar img {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar img:hover {
+    cursor: pointer;
+}
+.boton-eliminar img:focus {
+    outline: none;
+} */
